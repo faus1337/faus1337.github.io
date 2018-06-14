@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>Fausto World</title>
+</head>
+<body>    
+	Qual seu nome?
+	<input type="text" id="meunome" placeholder="Insira seu nome" onkeyup="Imprimir()" />
+	<button type="button" onclick="Limpar()">Limpar</button>
+	<div id="impressao"></div>
+	<script type="text/javascript">
+		function Imprimir(){
+			var meunomeValor = document.getElementById('meunome');
+			var impressaoValor = document.getElementById('impressao');
+			impressaoValor.innerHTML = meunomeValor.value;
+		}
+		function Limpar(){
+			var meunomeValor = document.getElementById('meunome');
+			var impressaoValor = document.getElementById('impressao');
+			meunomeValor.value = ''
+			impressaoValor.innerHTML = meunomeValor.value;
+		}
+	</script>
+</body>
+</html>
