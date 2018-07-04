@@ -1,43 +1,257 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title> Ola></title>
-	</head>
-	<body>
-		<h1> TESTE </h1>
-		<h2> TESTE </h2>
-		<h3> TESTE </h3>
-		<h4> TESTE </h4>
-		<h5> TESTE </h5>
-		<h6> TESTE </h6>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Faustino Floriani</title>
+    <meta name="description" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://scontent.fbnu3-1.fna.fbcdn.net/v/t1.0-1/p160x160/20374384_1489201617807722_7929060320787835756_n.jpg?_nc_cat=0&oh=9fa0ad63e332a9066f6eda2e656418f8&oe=5BB65CB3">
+    <style>
+	
+      body {
+        background-color: #2b2323;
+        font-family: monospace;
+        text-align: center;
+        color: #b4b4b4;
+		overflow: hidden;
+		text-align: center;         
+				
+      }
+      h1 {
+        font-size: 30px;
+        color: #f1f0f0;
+      }
+      h2 {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+	  h4 {
+        font-size: 12px;
+        margin: 8px 0;
+      }
+      a {
+        color: #8295bb;
+        text-decoration: none;
+      }
+      section {
+        margin: 15px 0;
+      }
+      .container {
+	  
+       
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 95vh;
 		
-		<table>
-			<thead>
-				<tr>
-					<th>Nome</th>
-					<th>Ano</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Faustino</td>
-					<td>2018</td>
-				</tr>
-				<tr>
-					<td>Antonio</td>
-					<td>2018</td>
-				</tr>
-				<tr>
-					<td>Floriani</td>
-					<td>2018</td>
-				</tr>
-				<tr>
-					<td>Junior</td>
-					<td>2018</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
+      }
+      header {
+        color: #b7b7b7;
+      }
+      header .photo img {
+        border-radius: 10%;
+      }
+	  header .photo img:hover{
+	  border-radius: 100%;
+	  }
+      header .basic-info .current-role {
+        font-size: 20px;
+      }
+      header .sub-current-role {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .contact {
+        margin-top: 0;
+      }
+      .contact h2 {
+        display: none;
+      }
+      .socials {
+        margin: 15px 0;
+      }
+      .tags .tag {
+        padding: 6px 10px;
+        background-color: #312727;
+        font-size: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      .companies img {
+        margin: 10px;
+        height: 25px;
+      }
+	  
+	 canvas{
+      position:absolute;
+      left:0;
+      top:0;
+      z-index:-1;
+    }
+		
+		
+		
+    </style>
+  </head>
+
+  <body>
+	
+        
+     <canvas id="c"></canvas>
+    
+   
+    <main class="container">
+	 
+      <header>
+        <div class="photo">
+          <img src="https://scontent.fbnu3-1.fna.fbcdn.net/v/t1.0-1/p160x160/20374384_1489201617807722_7929060320787835756_n.jpg?_nc_cat=0&oh=9fa0ad63e332a9066f6eda2e656418f8&oe=5BB65CB3" alt="Fabrício Ronchi" width="139" height="142">
+        </div>
+        <div class="basic-info">
+          <h1>Faustino Antonio Floriani Junior</h1>
+          <p class="current-role">Auxiliar Técnico na WEG<br>Aluno no SENAI<br>e-Sporter nas horas vagas</p>
+          <p class="sub-current-role">Trabalho na WEG, faco curso tecnico no SENAI</p>
+        </div>
+      </header>
+      <section class="contact">
+        <h2 aria-hidden="true">Contact</h2>
+        <div>Email: <a href="mailto:faus_jr_@hotmail.com">faus_jr_@hotmail.com</a></div>
+        <div>Github: <a href="https://github.com/faus1337" target="_blank" rel="noopener">@faus1337</a></div>
+        <div>Steam: <a href="https://steamcommunity.com/id/Yojaragua/" target="_blank" rel="noopener">Yo</a></div>
+      </section>
+      <section class="tags">
+        <h2>Experiência</h2>
+		<h4>WEG</h4>
+       
+        <span class="tag">Maestro</span>
+        <span class="tag">SAP</span>
+       
+		<h4>Jogos</h4>
+		 <span class="tag">Dota 2</span>
+		  <span class="tag">WYD</span>
+		   <span class="tag">CS:GO</span>
+		    <span class="tag">DotA</span>
+		<h4>Idioma</h4>
+		<span class="tag">Portugues</span>
+		 <span class="tag">Ingles</span>
+		  <span class="tag">Espanhol</span>
+		<h4>Linguagens</h4>
+		 <span class="tag">JAVA</span>
+		 <span class="tag">JavaScript</span>
+		  <span class="tag">HTML</span>
+		   <span class="tag">PYTHON</span>
+		    <span class="tag">VBA</span>
+      </section>
+    </main>
+	
+      <footer><SPAN ID="Clock">Bem vindo!</SPAN></footer>
+	
+       
+	 
+
+       
+        <script>
+        // geting canvas by id c
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+
+        //making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        //chinese characters - taken from the unicode charset
+        var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 10;
+        var columns = c.width / font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1; 
+
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "rgba(0, 255, 0, .3)"; //green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for( var i = 0; i < drops.length; i++ )
+            {
+                //a random chinese character to print
+                var text = matrix[ Math.floor( Math.random() * matrix.length ) ];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if( drops[i] * font_size > c.height && Math.random() > 0.975 )
+                    drops[i] = 0;
+
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+
+        setInterval( draw, 35 );
+		
+ var now = new Date();
+var mName = now.getMonth() +1 ;
+var dName = now.getDay() +1;
+var dayNr = now.getDate();
+var yearNr=now.getYear();
+if(dName==1) {Day = "Domingo";}
+if(dName==2) {Day = "Segunda-feira";}
+if(dName==3) {Day = "Terça-feira";}
+if(dName==4) {Day = "Quarta-feira";}
+if(dName==5) {Day = "Quinta-feira";}
+if(dName==6) {Day = "Sexta-feira";}
+if(dName==7) {Day = "Sábado";}
+if(mName==1){Month = "Janeiro";}
+if(mName==2){Month = "Fevereiro";}
+if(mName==3){Month = "Março";}
+if(mName==4){Month = "Abril";}
+if(mName==5){Month = "Maio";}
+if(mName==6){Month = "Junho";}
+if(mName==7){Month = "Julho";}
+if(mName==8){Month = "Agosto";}
+if(mName==9){Month = "Setembro";}
+if(mName==10){Month = "Outubro";}
+if(mName==11){Month = "Novembro";}
+if(mName==12){Month = "Dezembro";}
+if(yearNr < 2000) {Year = 1900 + yearNr;}
+else {Year = yearNr;}
+var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
+
+document.write('  '+todaysDate);
+ var Elem = document.getElementById("Clock");
+  function Horario(){ 
+    var Hoje = new Date(); 
+    var Horas = Hoje.getHours(); 
+    if(Horas < 10){ 
+      Horas = "0"+Horas; 
+    } 
+    var Minutos = Hoje.getMinutes(); 
+    if(Minutos < 10){ 
+      Minutos = "0"+Minutos; 
+    } 
+    var Segundos = Hoje.getSeconds(); 
+    if(Segundos < 10){ 
+      Segundos = "0"+Segundos; 
+    } 
+    Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+    } 
+    window.setInterval("Horario()",1000);
+        </script>
+  </body>
 </html>
